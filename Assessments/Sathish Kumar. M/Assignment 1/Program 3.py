@@ -1,9 +1,8 @@
-a=int(input('Enter the start'))
-b=int(input('Enter the end'))
-i=a
-while True :
-    i=i+1
-    if(i>=b):
-        break
-    if(i%2!=0):
-        print(i)
+n=int(input())
+for i in range(1,n+1):
+    fa=0
+    for j in range(1,n+1):
+        if (i%j==0):
+            fa+=1
+        if fa==2:
+            print(i)
